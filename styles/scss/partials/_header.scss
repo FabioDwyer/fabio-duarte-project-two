@@ -1,3 +1,52 @@
-header .logo-container h1 {
-    font-family: $logo-titles;
+header {
+        background: $theme-primary;
 }
+
+.header-home {
+    display: flex;
+    position: relative;
+    // justify-content: flex-end;
+    // width: 100vw;
+    // height: 100vh;
+}
+
+header .logo-container {
+    width: 50%;  
+    position: relative;   
+}
+
+header .logo-container img {
+    position: absolute;
+    width: 40%;
+    top: 23%;
+    left: 8%;
+}
+
+.header-home .logo-container h1 {
+    font-size: 12rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: 92px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+header .img-container img {
+    width: 50%;
+    position: relative;
+    top: 5%;
+    right: -40%;
+}
+
+header img {
+    width: 65%;
+}
+
+
+
+
+
+
+
+

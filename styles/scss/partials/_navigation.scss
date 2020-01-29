@@ -2,27 +2,30 @@ nav {
     background: $theme-primary;
     text-transform: uppercase;
     .wrapper {
-        width: 50%;
-        ul {
+        width: 55%;
+            ul {
             display: flex;
             justify-content: space-around;
             align-items: center;
             padding: 1rem;
             
-            li {
-                &:nth-of-type(h2) {
-                font-family: $logo-titles;
-                font-weight: bold;
-                }
-            }
+            // li {
+            //     &:nth-of-type(h2) {
+            //     font-family: $logo-titles;
+            //     font-weight: bold;
+            //     }
+            // }
         }
     }
 }
 
-// nav .nav-home ul li:nth-of-type(h2) {
-//     font-family: $logo-titles;
-//     font-weight: bold;
-// }
+nav ul li:nth-child(3) {
+    font-family: $logo-titles;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+// h2 font change to $logo-titles doesn't work!!!!
 
 nav p,
 nav a,
@@ -30,3 +33,6 @@ nav h2 {
     font-weight: bold;
 }
 
+nav p {
+    color: #fff;
+}

@@ -235,6 +235,11 @@ html {
   overflow: hidden;
 }
 
+h1 {
+  font-family: "Lora", serif;
+  font-weight: bold;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -322,7 +327,7 @@ nav {
 }
 
 nav .wrapper {
-  width: 50%;
+  width: 55%;
 }
 
 nav .wrapper ul {
@@ -337,9 +342,10 @@ nav .wrapper ul {
   padding: 1rem;
 }
 
-nav .wrapper ul li:nth-of-type(h2) {
+nav ul li:nth-child(3) {
   font-family: "Lora", serif;
   font-weight: bold;
+  padding: 0 10px;
 }
 
 nav p,
@@ -348,6 +354,50 @@ nav h2 {
   font-weight: bold;
 }
 
-header .logo-container h1 {
-  font-family: "Lora", serif;
+nav p {
+  color: #fff;
+}
+
+header {
+  background: #F6A823;
+}
+
+.header-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+header .logo-container {
+  width: 50%;
+  position: relative;
+}
+
+header .logo-container img {
+  position: absolute;
+  width: 40%;
+  top: 23%;
+  left: 8%;
+}
+
+.header-home .logo-container h1 {
+  font-size: 12rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style: 92px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+header .img-container img {
+  width: 50%;
+  position: relative;
+  top: 5%;
+  right: -40%;
+}
+
+header img {
+  width: 65%;
 }
