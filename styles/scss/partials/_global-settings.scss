@@ -1,0 +1,87 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $base-font;
+    color: $theme-secondary;
+    background-color: $bg-primary;
+}
+
+.wrapper {
+    max-width: 1240px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* stripping styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+button {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+} 
+
+/*  a link styles */
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: $main-font;
+    text-transform: uppercase;
+    /* display: inline-block; */
+}
+
+a:active {
+    color: $highlight-image;
+}
+
+/* button styles */
+button {
+    border: none;
+    background: $accent;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: $main-font;
+}
+
+button a {
+    // background: $accent;
+    // color: $main-font;
+    // padding: 10px 30px;
+}
+
+button a:hover {
+    background: #fff;
+    color: $accent;
+}
+

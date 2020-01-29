@@ -1,0 +1,32 @@
+nav {
+    background: $theme-primary;
+    text-transform: uppercase;
+    .wrapper {
+        width: 50%;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem;
+            
+            li {
+                &:nth-of-type(h2) {
+                font-family: $logo-titles;
+                font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// nav .nav-home ul li:nth-of-type(h2) {
+//     font-family: $logo-titles;
+//     font-weight: bold;
+// }
+
+nav p,
+nav a,
+nav h2 {
+    font-weight: bold;
+}
+
