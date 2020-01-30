@@ -1,0 +1,24 @@
+.journey {
+    margin: 10rem auto;
+}
+.journey .wrapper {
+    // width: 90%;
+    display: flex;
+}
+
+.journey .img-container {
+    width: 22.5%;
+}
+
+.journey img {
+    box-shadow: 15px 15px $theme-primary;
+}
+
+.journey .text-content {
+    width: calc(77.5% - 80px);
+    margin-left: 80px;
+}
+
+.journey .text-content p {
+    margin: 5% auto;
+}

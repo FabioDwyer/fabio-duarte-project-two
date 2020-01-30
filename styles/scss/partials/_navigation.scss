@@ -2,7 +2,7 @@ nav {
     background: $theme-primary;
     text-transform: uppercase;
     .wrapper {
-        width: 55%;
+        width: 50%;
             ul {
             display: flex;
             justify-content: space-around;
@@ -20,12 +20,12 @@ nav {
 }
 
 nav ul li:nth-child(3) {
-    font-family: $logo-titles;
+    font-family: $logo;
     font-weight: bold;
     padding: 0 10px;
 }
 
-// h2 font change to $logo-titles doesn't work!!!!
+// h2 font change to $logo-titles doesn't work with nesting!!!!
 
 nav p,
 nav a,
@@ -34,5 +34,9 @@ nav h2 {
 }
 
 nav p {
-    color: #fff;
+    color: $bg-primary;
+}
+
+nav li a {
+    line-height: 29px;
 }

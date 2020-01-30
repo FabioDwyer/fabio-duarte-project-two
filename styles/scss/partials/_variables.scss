@@ -1,6 +1,6 @@
 // Typography:
 
-$logo-titles: 'Lora', serif; // Logos and h1
+$logo: 'Lora', serif; // Logos and h1
 
 $base-font: 'Roboto', sans-serif; // All other headings and texts
 
@@ -13,6 +13,9 @@ $theme-primary: #F6A823;
 $theme-secondary: #4F4F4F;
 // Grey rgb(79, 79, 79)
 
+$main-font: #2c2c2c;
+// Black shade rgb(44, 44, 44) FOOTER
+
 $bg-primary: #F0EFED;
 //  White shade rgb(240, 239, 237)
 
@@ -20,24 +23,10 @@ $bg-secondary: #FFF;
 // White rgb(255, 255, 255)
 
 $accent: #05AFC1;
-// rgb(5, 175, 193)
+// Light Blue rgb(5, 175, 193)
 
 $highlight-text: #285E64;
 // Dark grey blue rgb(40, 94, 100)
 
 $highlight-image: #A82706;
 // Rust red rgb(168, 39, 6)
-
-$main-font: #2C2C2C
-// Black shade rgb(44, 44, 44)
-
-
-
-
-
-
-
-
-
-
-

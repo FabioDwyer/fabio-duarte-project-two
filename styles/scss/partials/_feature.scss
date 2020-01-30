@@ -1,0 +1,65 @@
+.feature {
+    background: $bg-secondary;
+    margin-bottom: 10rem;
+}
+
+.row-one,
+.row-two {
+    display: flex;
+    height: 60vh;
+}
+
+
+.row-one .image-box,
+.row-two .image-box {
+    width: 62%;
+    position: relative;
+}
+
+.row-one .image-box {
+    background: $highlight-image;
+    top: -10%;
+}
+
+.row-two .image-box {
+    background: $theme-primary;
+    top: 12%;
+}    
+
+.row-one .image-box img,
+.row-two .image-box img {
+    width: 85%;
+    position: relative;
+}
+
+.row-one .image-box img {
+    top: -5.5%;
+    left: 12%;
+}
+
+.row-two .image-box img {
+    top: -5%;
+    right: 3.5%;
+} 
+
+.row-one .text-container,
+.row-two .text-container {
+    width: 60%;
+}
+
+.row-one .text-container {
+    padding: 6%;
+}
+
+.row-two .text-container {
+    padding: 2% 6%;
+    text-align: right;
+}
+
+.row-one .text-container p,
+.row-two .text-container p {
+    padding: 3% 0;
+}
+
+
+

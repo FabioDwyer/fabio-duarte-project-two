@@ -2,6 +2,12 @@ header {
         background: $theme-primary;
 }
 
+header h1 {
+    font-family: $logo;
+    font-weight: bold;
+    color: $main-font;
+}
+
 .header-home {
     display: flex;
     position: relative;
@@ -10,38 +16,41 @@ header {
     // height: 100vh;
 }
 
-header .logo-container {
+.header-home .logo-container {
     width: 50%;  
-    position: relative;   
+    position: relative; 
 }
 
-header .logo-container img {
+.header-home .logo-container img {
     position: absolute;
     width: 40%;
-    top: 23%;
-    left: 8%;
+    top: 29%;
+    left: 2%;
 }
 
 .header-home .logo-container h1 {
-    font-size: 12rem;
+    font-size: 13rem;
     font-weight: bold;
     text-transform: uppercase;
     list-style: 92px;
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 40%;
+    left: 10%;
 }
 
-header .img-container img {
-    width: 50%;
+.header-home .img-container img {
+    width: 60%;
     position: relative;
-    top: 5%;
-    right: -40%;
+    top: 7%;
+    right: -35%;
+    box-shadow: 15px 15px $bg-primary;  
 }
 
-header img {
-    width: 65%;
+.header-home img {
+    width: 70%;
 }
+
+
 
 
 

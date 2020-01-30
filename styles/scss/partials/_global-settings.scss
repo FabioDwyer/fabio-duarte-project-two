@@ -3,10 +3,11 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-family: $base-font;
-    color: $theme-secondary;
+    color: $main-font;
     background-color: $bg-primary;
+    line-height: 32px;
 }
 
 .wrapper {
@@ -55,12 +56,24 @@ a:active,
 a:visited {
     text-decoration: none;
     color: $main-font;
-    text-transform: uppercase;
-    /* display: inline-block; */
+    display: inline-block; 
 }
 
 a:active {
-    color: $highlight-image;
+    color: $theme-primary;
+}
+
+a {
+    padding: 8px 12px;
+}
+
+a:hover,
+a:focus {
+    background-color: $accent;
+    border-radius: 5px;
+    position: relative;
+    transition: 1s;
+    transform: scale(1.5);
 }
 
 /* button styles */
@@ -68,20 +81,54 @@ button {
     border: none;
     background: $accent;
     cursor: pointer;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-weight: bold;
-    padding: 5px 15px;
+    padding: 15px 22px;
     color: $main-font;
 }
 
-// button a {
-    // background: $accent;
-    // color: $main-font;
-    // padding: 10px 30px;
-// }
+button:hover {
+    background: $theme-primary;
+}
 
-button a:hover {
-    background: #fff;
-    color: $accent;
+h1 {
+    font-family: $logo;
+    font-weight: bold;
+    color: $main-font;
+    font-size: 80px;
+    line-height: 92px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h1, 
+h2,
+h3,
+button,
+a {
+    text-transform: uppercase;
+}
+
+h2,
+h3,
+h4,
+h5,
+button,
+a {
+    letter-spacing: 1px;
 }
 
