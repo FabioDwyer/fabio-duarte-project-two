@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: $base-font;
     color: $main-font;
     background-color: $bg-primary;
@@ -76,6 +76,24 @@ a:focus {
     transform: scale(1.5);
 }
 
+a.link-text {
+    color: $highlight-text;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: none;
+    display: inline;
+}
+
+a.link-text:hover,
+a.link-text:focus {
+    color: $bg-secondary;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: none;
+    display: inline;
+}
+
+
 /* button styles */
 button {
     border: none;
@@ -118,6 +136,8 @@ h5 {
 h1, 
 h2,
 h3,
+h4,
+h5
 button,
 a {
     text-transform: uppercase;

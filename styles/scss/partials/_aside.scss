@@ -1,0 +1,43 @@
+.wrapper.blog {
+    display: flex;
+}
+
+aside.blog {
+    width: 30%;
+    margin-top: 10%;
+}
+
+// main .blog {
+//     width: 70%;
+// } Code for this flexbox on _main.scss
+
+.aside-top-blog,
+.aside-bottom-blog {
+    background: $bg-secondary;
+    padding: 7%;
+    h5 {
+        padding: 1%;
+        text-transform: uppercase;
+    }
+    p {
+        margin-top: 3%;
+    }
+}
+
+.aside-top-blog {
+    margin-bottom: 8%;
+}
+
+.aside-top-blog img {
+    margin-bottom: 7%;
+}
+
+.aside-bottom-blog ul li {
+    list-style: disc;
+    margin-left: 8%;
+    color: $theme-primary;
+    a {
+        color: $main-font;
+    }
+}
+

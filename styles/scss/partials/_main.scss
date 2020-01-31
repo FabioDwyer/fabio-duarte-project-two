@@ -1,9 +1,33 @@
-main {
-    padding: 12rem 20rem 12rem 5rem;
+main.home {
+    padding: 12rem 15rem 12rem 5rem;
     margin-top: 10px;    
 }
 
-main p {
+main.home p {
     margin: 2% 0;
+}
+
+
+// .wrapper.blog {
+    //      display: flex;
+    // }
+    // aside .blog {
+        //     width: 30%;
+        //     margin-top: 10%;
+        // } Code for this flexbox on _aside.scss
+
+main.blog {
+    width: calc(70% - 40px);
+}
+        
+main.blog {
+    background: $bg-secondary;
+    padding: 3% 5%;
+    margin-top: 10%;
+    margin-left: 40px;
+}
+
+main.blog article p {
+    margin: 3% auto;
 }
 

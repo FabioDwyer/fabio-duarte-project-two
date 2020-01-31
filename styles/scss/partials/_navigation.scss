@@ -8,16 +8,16 @@ nav {
             justify-content: space-around;
             align-items: center;
             padding: 1rem;
-            
-            // li {
-            //     &:nth-of-type(h2) {
-            //     font-family: $logo-titles;
-            //     font-weight: bold;
-            //     }
-            // }
         }
     }
 }
+
+//  li {
+//     &:nth-of-type(h2) {
+//     font-family: $logo-titles;
+//     font-weight: bold;
+//     }
+// }
 
 nav ul li:nth-child(3) {
     font-family: $logo;
@@ -25,12 +25,14 @@ nav ul li:nth-child(3) {
     padding: 0 10px;
 }
 
-// h2 font change to $logo-titles doesn't work with nesting!!!!
-
 nav p,
 nav a,
 nav h2 {
     font-weight: bold;
+}
+
+nav li h2 {
+    font-size: 3.6rem;
 }
 
 nav p {

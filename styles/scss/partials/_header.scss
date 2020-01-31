@@ -1,19 +1,20 @@
-header {
-        background: $theme-primary;
+header.home {
+    background-color: $theme-primary;
 }
 
 header h1 {
     font-family: $logo;
     font-weight: bold;
     color: $main-font;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 92px;
+    
 }
 
 .header-home {
     display: flex;
     position: relative;
-    // justify-content: flex-end;
-    // width: 100vw;
-    // height: 100vh;
 }
 
 .header-home .logo-container {
@@ -24,15 +25,13 @@ header h1 {
 .header-home .logo-container img {
     position: absolute;
     width: 40%;
-    top: 29%;
-    left: 2%;
+    top: 28.5%;
+    left: 1%;
 }
 
 .header-home .logo-container h1 {
     font-size: 13rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    list-style: 92px;
+    // font-size: calc(50px + (130 - 50) * ((100vw - 320px) / (1600 - 320)));
     position: absolute;
     top: 40%;
     left: 10%;
@@ -43,15 +42,43 @@ header h1 {
     position: relative;
     top: 7%;
     right: -35%;
-    box-shadow: 15px 15px $bg-primary;  
+    box-shadow: 15px 15px $bg-secondary;  
 }
 
 .header-home img {
     width: 70%;
 }
 
+header.header-blog {
+    background-image: url(../../../assets/blog-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+header.header-contact {
+    background-image: url(../assets/contact-image-1.jpg);
+}
 
+header.header-blog {
+    background-image: url(../assets/blog-image-1.jpg);
+}
+
+header.header-contact,
+header.header-blog {
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-attachment: fixed;
+    height: 50vh;
+    // position: relative;
+}
+
+.header-blog h1,
+.header-contact h1 {
+    position: relative;
+    top: 82.5%;
+    left: 7%;
+    font-size: 6rem;
+}
 
 
 

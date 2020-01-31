@@ -1,0 +1,15 @@
+.photo-gallery {
+    background: $bg-secondary;
+    margin: 5% auto 0;
+    padding: 1% 0;
+}
+
+.photo-gallery .wrapper {
+    display: flex;
+}
+
+.photo-gallery.wrapper img {
+    margin: 0 20px;
+    width: calc((100% - 80px) /3);
+    padding-bottom: 6%;
+}

@@ -7,7 +7,8 @@
 }
 
 .journey .img-container {
-    width: 22.5%;
+    width: calc(25% - 20px);
+    margin-left: 20px;
 }
 
 .journey img {
@@ -15,7 +16,7 @@
 }
 
 .journey .text-content {
-    width: calc(77.5% - 80px);
+    width: calc(75% - 80px);
     margin-left: 80px;
 }
 
