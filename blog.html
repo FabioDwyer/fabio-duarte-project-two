@@ -21,7 +21,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#about">About</a>
+                    <a href="blog.html#about">About</a>
                 </li>
                 <li>
                     <h2>Sophie</h2>
@@ -70,7 +70,9 @@
 
         <main class="blog">
             <article>    
-                <h4><span class="date">Monday October 8th, 2018 by</span></h4><a href="mailto:info@email.com">Sophie Barlow</a>
+                <h4>Why I became a blogger</h4>
+                <h6>Monday October 8th, 2018 by
+                <a href="mailto:info@email.com" class="link-text">Sophie Barlow</a></h6>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Commodo elit at imperdiet dui accumsan sit amet
@@ -123,28 +125,44 @@
 
             <section class="comments">
                 <div class="comment-one">
-                    <img src="assets/blog-image-3.jpg" alt="Jeremy's picture.">
-                    <h4><span class="date">Tuesday October 9th, 2018 by</span></h4><a href="mailto:jeremy@email.com">Jeremy</a>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, tempore earum, temporibus optio ea at reprehenderit atque ab velit nemo necessitatibus a esse possimus aperiam debitis, libero itaque id labore eaque incidunt quisquam? Quam, suscipit!</p>
+                    <div class="img-container">
+                        <img src="assets/blog-image-3.jpg" alt="Jeremy's picture.">
+                    </div>
+                    <div class="text-content">
+                        <h6><a href="mailto:jeremy@email.com">Tuesday October 9th, 2018 by Jeremy</a></h6>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, tempore earum, temporibus optio ea at reprehenderit atque ab velit nemo necessitatibus a esse possimus aperiam debitis, libero itaque id labore eaque incidunt quisquam? Quam, suscipit!</p>
+                    </div>
                 </div>
                 <div class="comment-two">
-                    <img src="assets/blog-image-4.jpg" alt="Jeremy's picture.">
-                    <h4><span class="date">Wednesday October 10th, 2018 by</span></h4><a href="mailto:julia@email.com">Julia</a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt voluptatem ea, quidem eaque facere quam temporibus sed, officiis tenetur eius exercitationem iste assumenda labore ipsa?</p>
+                    <div class="img-container">
+                        <img src="assets/blog-image-4.jpg" alt="Jeremy's picture.">
+                    </div>
+                    <div class="text-content">
+                        <h6><a href="mailto:julia@email.com">Wednesday October 10th, 2018 by Julia</a></h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt voluptatem ea, quidem eaque facere quam temporibus sed, officiis tenetur eius exercitationem iste assumenda labore ipsa?</p>
+                    </div>
                 </div>
             </section>
 
             <form action="" class="blog">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email address">
-                <input type="text" name="comment" placeholder="Comment">
-                <button>Post Comment</button>
+                <fieldset>
+                    <label for="name" class="visually-hidden">Your name:</label>
+                    <input type="text" name="name" placeholder="Name">
+
+                    <label for="email" class="visually-hidden">Your email</label>
+                    <input type="email" name="email" placeholder="Email address">
+                </fieldset>
+
+                <label for="comment" class="visually-hidden">Your message</label>
+                <textarea name="comment"  cols="94%" rows="10" placeholder="Comment"></textarea>
+
+                <button type="submit">Post comment</button>
             </form>
         </main>
     </div>  <!-- End of wrapper -->
 
     <footer>
-        <h4>Copyright &copy; 2018 HackerYou</h4>
+        <h6>Copyright &copy; 2018 HackerYou</h6>
     </footer>
 </body>
 </html>

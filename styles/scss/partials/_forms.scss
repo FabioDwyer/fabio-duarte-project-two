@@ -1,0 +1,30 @@
+input,
+textarea {
+    border: none;
+    margin-bottom: 2%;
+    padding: 4% 5%;
+}
+
+input::placeholder ,
+textarea::placeholder {
+    font-style: italic;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+
+fieldset input {
+    width: 49%;
+}
+
+textarea {
+    width: 100%;
+}
+
+form button {
+    width: 100%;
+    margin-bottom: 7%;
+}

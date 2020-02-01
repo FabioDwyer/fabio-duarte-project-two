@@ -17,12 +17,12 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* stripping styles */
+/* Stripping Styles */
 body,
 h1,
 h2,
@@ -34,7 +34,8 @@ p,
 ul,
 li,
 a,
-button {
+button,
+fieldset {
 	margin: 0;
 	padding: 0;
 }
@@ -48,7 +49,7 @@ li {
     text-decoration: none;
 } 
 
-/*  a link styles */
+/*  a Link Styles */
 a,
 a:hover,
 a:focus,
@@ -59,16 +60,20 @@ a:visited {
     display: inline-block; 
 }
 
-a:active {
-    color: $theme-primary;
-}
-
-a {
+nav ul a,
+button a {
     padding: 8px 12px;
 }
 
-a:hover,
-a:focus {
+nav ul a:active,
+button a:active {
+    color: $theme-primary;
+}
+
+nav ul a:hover,
+nav ul a:focus,
+button a:hover,
+button a:focus {
     background-color: $accent;
     border-radius: 5px;
     position: relative;
@@ -81,7 +86,6 @@ a.link-text {
     font-size: 1.6rem;
     font-weight: bold;
     text-transform: none;
-    display: inline;
 }
 
 a.link-text:hover,
@@ -90,16 +94,16 @@ a.link-text:focus {
     font-size: 1.6rem;
     font-weight: bold;
     text-transform: none;
-    display: inline;
+    display: inline-block;
 }
 
 
-/* button styles */
+/* Button Styles */
 button {
     border: none;
     background: $accent;
     cursor: pointer;
-    // text-transform: uppercase;
+    text-transform: uppercase;
     font-weight: bold;
     padding: 15px 22px;
     color: $main-font;
@@ -109,6 +113,12 @@ button:hover {
     background: $theme-primary;
 }
 
+form button {
+    display: block;
+}
+
+
+/* Typographic Styles */
 h1 {
     font-family: $logo;
     font-weight: bold;
@@ -131,6 +141,12 @@ h4 {
 
 h5 {
     font-size: 20px;
+}
+
+h6 {
+    font-size: 1.6rem;
+    text-transform: none;
+    font-weight: normal;
 }
 
 h1, 

@@ -1,20 +1,25 @@
-.wrapper.blog {
+.wrapper.blog,
+.wrapper.contact {
     display: flex;
+    width: 80%;
 }
 
-aside.blog {
+aside.blog,
+aside.contact {
     width: 30%;
     margin-top: 10%;
 }
 
-// main .blog {
+// Rest of this Flexbox:
+// main.blog,
+// form.contact {
 //     width: 70%;
 // } Code for this flexbox on _main.scss
 
 .aside-top-blog,
-.aside-bottom-blog {
+.aside-bottom-blog,
+aside.contact {
     background: $bg-secondary;
-    padding: 7%;
     h5 {
         padding: 1%;
         text-transform: uppercase;
@@ -26,18 +31,58 @@ aside.blog {
 
 .aside-top-blog {
     margin-bottom: 8%;
-}
-
-.aside-top-blog img {
+    img {
     margin-bottom: 7%;
+    }
 }
 
 .aside-bottom-blog ul li {
     list-style: disc;
-    margin-left: 8%;
+    margin-left: 10%;
     color: $theme-primary;
     a {
         color: $main-font;
+        font-weight: normal;
     }
 }
+
+.aside-top-blog a {
+    font-weight: bold;
+}
+
+.aside-top-blog,
+.aside-bottom-blog {
+    padding: 10%; 
+    a {
+        margin-left: 10px;
+        letter-spacing: normal;
+    }
+    a:hover,
+    a:focus {
+        color: $theme-primary;
+    }
+}
+
+aside.contact {
+    padding: 3%;
+    margin-bottom: 20%;
+    line-height: normal;
+}
+
+ul.social-media li {
+    display: inline-block;
+    padding-right: 5%;
+    font-size: 3rem;
+    color: $theme-primary;
+    font-weight: bold;
+}
+
+aside.contact a {
+    font-weight: bold;
+    text-transform: none;
+    margin: 5% 0 3%;
+}
+
+
+
 

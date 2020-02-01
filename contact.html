@@ -21,7 +21,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="blog.html/#about">About</a>
+                    <a href="blog.html#about">About</a>
                 </li>
                 <li>
                     <h2>Sophie</h2>
@@ -44,12 +44,20 @@
     <div class="wrapper contact">
         <aside class="contact">
             <ul class="social-media">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                    <i class="fab fa-facebook-f"></i>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin-in"></i>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                </li>
             </ul>
-            <a href="mailto:info@email.com"></a>
+            <a href="mailto:info@email.com">info@email.com</a>
             <p>123 - 456 - 7890</p>
             <p>123 Queen Street West, Unit 10</p>
             <p>Toronto, Ontario</p>
@@ -57,16 +65,24 @@
         </aside>
 
         <form action="" class="contact">
-            <input type="text" name="name" placeholder="Name">
-            <input type="email" name="email" placeholder="Email address">
-            <input type="text" name="message" placeholder="Message">
-            <button>Submit</button>
+            <fieldset>
+                <label for="name" class="visually-hidden">Your name:</label>
+                <input type="text" name="name" placeholder="Name">
+
+                <label for="email" class="visually-hidden">Your email</label>
+                <input type="email" name="email" placeholder="Email address">
+            </fieldset>
+
+            <label for="message" class="visually-hidden">Your message</label>
+            <textarea name="message" cols="94%" rows="10" placeholder="Message"></textarea>
+
+            <button type="submit">Submit</button>
         </form>
     </div>
     <!-- End of wrapper -->
 
     <footer>
-        <h4>Copyright &copy; 2018 HackerYou</h4>
+        <h6>Copyright &copy; 2018 HackerYou</h6>
     </footer>
 </body>
 </html>
