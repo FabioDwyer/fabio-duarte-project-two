@@ -19,17 +19,23 @@ header h1 {
     position: relative; 
 }
 
+.header-home .img-container {
+    width: 50%;
+    position: relative;
+}
+
 .header-home .logo-container img {
-    position: absolute;
-    width: 40%;
+    position: relative;
+    width: 14vw;
     top: 28.5%;
     left: 1%;
 }
 
 .header-home .logo-container h1 {
-    font-size: 13rem;
-    position: absolute;
-    top: 40%;
+    // font-size: 13rem;
+    font-size: 10vw;
+    position: relative;
+    top: 20%;
     left: 10%;
 }
 
@@ -37,7 +43,7 @@ header h1 {
     width: 60%;
     position: relative;
     top: 7%;
-    right: -35%;
+    right: -17.5%;
     box-shadow: 15px 15px $bg-secondary;  
 }
 

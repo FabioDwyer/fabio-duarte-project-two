@@ -1,0 +1,103 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    h1 {
+        line-height: .3;
+    }
+    
+    .wrapper {
+        width: 85%;
+    }
+
+    .wrapper.blog,
+    .wrapper.contact {
+        width: 90%;
+    }
+
+    .header-home .logo-container img {
+    top: 20%;
+    }
+
+    .header-home .logo-container h1 {
+        top: 18%;
+    }
+
+    .header-blog h1,
+    .header-contact h1 {
+        top: 70%;
+        left: 5%;
+        line-height: 2.3;
+    }
+
+    header.header-contact,
+    header.header-blog {
+        background-position-x: 40%;
+        height: 45vh;
+    }
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .hidden-for-mobile {
+        display: inline-block;
+    }
+
+    .fas.fa-bars {
+        font-size: 4rem;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    nav ul.hidden-for-mobile {
+        display: none;
+    }
+
+    .wrapper.header-home {
+        width: 95%;
+    }
+
+    .header-home {
+        display: block;
+    }
+
+    .header-home .logo-container {
+        width: 100%;  
+        padding: 5% 0;
+        margin-bottom: 4%;
+        img {
+            position: relative;
+            width: 16vw;
+            top: 20%;
+            left: 12%;
+        }
+        h1 {
+            font-size: 15vw;
+            position: relative;
+            top: 15%;
+            left: 17%;
+        }
+    }
+
+    .header-home .logo-container img {
+        top: 20%;
+    }
+
+    .header-home .img-container {
+        width: 100%;
+    }
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .header-home .logo-container img {
+        width: 20vw;
+        // position: relative;
+        // top: 5%;
+        // left: 1%;
+    }
+
+}

@@ -1,3 +1,7 @@
+.hidden-for-desktop {
+    display: none;
+} /* For Tablet and Mobile only */
+
 nav {
     background: $theme-primary;
     text-transform: uppercase;
@@ -12,12 +16,9 @@ nav {
     }
 }
 
-//  li {
-//     &:nth-of-type(h2) {
-//     font-family: $logo-titles;
-//     font-weight: bold;
-//     }
-// }
+nav li {
+    display: inline-block;
+}
 
 nav ul li:nth-child(3) {
     font-family: $logo;
