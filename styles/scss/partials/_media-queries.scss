@@ -47,7 +47,7 @@
     .row-two {
         display: inline-block;
         height: auto;
-    } // DON"T CHANGE THIS!!!
+    } 
 
     .row-one .image-box,
     .row-two .image-box {
@@ -124,8 +124,7 @@
         width: calc(70% - 20px);
         margin-top: 10%;
         margin-left: 20px;
-}
-
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -242,8 +241,6 @@
         width: 60%;
     }
 
-
-
 // Feature (Home)
     .row-one .text-container,
     .row-two .text-container {
@@ -293,7 +290,6 @@
         box-shadow: 8px 8px $bg-secondary
     }  
 
-    
     header.header-contact,
     header.header-blog {
         height: 45vh;
@@ -320,7 +316,7 @@
     }
 
     .links-home .links-box {
-    width: 100%;
+        width: 100%;
     }
 
     .links-box .text-content a {
@@ -413,7 +409,6 @@
         display: none;
     }
 
-    
     aside.blog {
         display: block;
     }

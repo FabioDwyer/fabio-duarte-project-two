@@ -32,7 +32,6 @@ header h1 {
 }
 
 .header-home .logo-container h1 {
-    // font-size: 13rem;
     font-size: 10vw;
     position: relative;
     top: 20%;
@@ -64,15 +63,14 @@ header.header-blog {
     background-repeat: no-repeat;
     background-size: cover;
     height: 57vh;
-    position: relative; // DON'T CHANGE THIS!!!!
+    position: relative; 
 }
 
 .header-blog h1,
 .header-contact h1 {
-    position: absolute; // DON'T CHANGE THIS!!!!
+    position: absolute; 
     top: 85%;
     left: 10%;
-    // font-size: 6.4rem;
     font-size: 4.85vw;
 }
 
