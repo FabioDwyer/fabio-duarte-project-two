@@ -5,15 +5,27 @@
 nav {
     background: $theme-primary;
     text-transform: uppercase;
-    .wrapper {
-        width: 50%;
+    display: flex;
+    // .wrapper {
+        // width: 50%;
             ul {
             display: flex;
-            justify-content: space-around;
+            // justify-content: space-around;
             align-items: center;
             padding: 1rem;
         }
-    }
+    // }
+}
+
+nav .menu {
+    // width: 70%;
+}
+
+nav .hamburger {
+    // width: 20%;
+    // padding-right: 5%;
+    // display: none;
+    align-self: flex-end;
 }
 
 nav li {
@@ -43,3 +55,4 @@ nav p {
 nav li a {
     line-height: 29px;
 }
+

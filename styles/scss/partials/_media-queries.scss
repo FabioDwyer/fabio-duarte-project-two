@@ -3,7 +3,7 @@
     nav .wrapper {
         width: 75%;
     }
-        
+
     .links-home .wrapper {
         width: 96%;
     }
@@ -125,20 +125,44 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     .hidden-for-mobile {
-        display: inline-block;
+        display: none;
+    }
+
+    .hidden-for-desktop {
+        display: block;
+    }
+
+    .hamburger {
+        position: relative;
     }
 
     .fas.fa-bars {
         font-size: 4rem;
-        display: block;
-        position: absolute;
-        right: 2%;
-        top: 2%;
+        padding-top: 1%;
+        position: relative;
+        // left: 100%;
     }
 
-    nav ul.hidden-for-mobile {
+    // nav ul.hidden-for-mobile {
+    //     display: none;
+    // }
+
+    // Test
+    nav .menu {
+        width: 80%;
         display: none;
+            // visibility: hidden;
+
     }
+
+    nav .hamburger {
+        width: 20%;
+        display: block;
+    }
+
+    // nav .menu ul {
+    //     visibility: hidden;
+    // }
 
     .wrapper.header-home {
         width: 95%;
@@ -150,8 +174,7 @@
 
     .header-home .logo-container {
         width: 100%;  
-        padding: 5% 0;
-        margin-bottom: 3%;
+        margin-bottom: 8%;
         img {
             position: relative;
             width: 16vw;
@@ -173,6 +196,11 @@
     .header-home .img-container {
         width: 100%;
     }
+
+    // .header-blog h1,
+    // .header-contact h1 {
+    //     font-size: ;
+    // }
 
     main.home {
     margin: 10% 0;
@@ -203,6 +231,13 @@
 }
 
 @media (max-width: 692px) {
+    // .fas.fa-bars {
+    //     font-size: 4rem;
+    //     padding-top: 1%;
+    //     position: relative;
+    //     left: 105%;
+    // }    
+    
     .feature {
         margin-bottom: 5rem;
     }
@@ -260,6 +295,11 @@
     button {
         width: 100%;
     }
+
+    // .fas.fa-bars {
+    //     padding-top: 4%;
+    //     left: 100%;
+    // }
 
     .header-home .logo-container img {
         width: 20vw;
