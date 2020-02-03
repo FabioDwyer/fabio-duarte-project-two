@@ -6,36 +6,35 @@ nav {
     background: $theme-primary;
     text-transform: uppercase;
     display: flex;
-    // .wrapper {
-        // width: 50%;
-            ul {
+    justify-content: space-between;
+        ul {
             display: flex;
-            // justify-content: space-around;
+            justify-content: space-around;
             align-items: center;
             padding: 1rem;
         }
-    // }
 }
 
-nav .menu {
-    // width: 70%;
+.menu {
+    margin-left: 34%;
 }
 
-nav .hamburger {
-    // width: 20%;
-    // padding-right: 5%;
+.hamburger {
     // display: none;
-    align-self: flex-end;
+    margin-right: 2%;
+    margin-top: 1%;
+    font-size: 4rem;
 }
 
 nav li {
     display: inline-block;
+    padding: 0 5%;
 }
 
 nav ul li:nth-child(3) {
     font-family: $logo;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 0 4%;
 }
 
 nav p,

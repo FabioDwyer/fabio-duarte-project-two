@@ -132,37 +132,12 @@
         display: block;
     }
 
-    .hamburger {
-        position: relative;
-    }
-
     .fas.fa-bars {
         font-size: 4rem;
-        padding-top: 1%;
-        position: relative;
-        // left: 100%;
     }
-
-    // nav ul.hidden-for-mobile {
-    //     display: none;
-    // }
 
     // Test
-    nav .menu {
-        width: 80%;
-        display: none;
-            // visibility: hidden;
-
-    }
-
-    nav .hamburger {
-        width: 20%;
-        display: block;
-    }
-
-    // nav .menu ul {
-    //     visibility: hidden;
-    // }
+    
 
     .wrapper.header-home {
         width: 95%;
@@ -196,11 +171,6 @@
     .header-home .img-container {
         width: 100%;
     }
-
-    // .header-blog h1,
-    // .header-contact h1 {
-    //     font-size: ;
-    // }
 
     main.home {
     margin: 10% 0;

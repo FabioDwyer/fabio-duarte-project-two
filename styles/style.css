@@ -444,31 +444,42 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
 }
 
-nav .hamburger {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+.menu {
+  margin-left: 34%;
+}
+
+.hamburger {
+  margin-right: 2%;
+  margin-top: 1%;
+  font-size: 4rem;
 }
 
 nav li {
   display: inline-block;
+  padding: 0 5%;
 }
 
 nav ul li:nth-child(3) {
   font-family: "Lora", serif;
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 4%;
 }
 
 nav p,
@@ -1072,21 +1083,8 @@ form button {
   .hidden-for-desktop {
     display: block;
   }
-  .hamburger {
-    position: relative;
-  }
   .fas.fa-bars {
     font-size: 4rem;
-    padding-top: 1%;
-    position: relative;
-  }
-  nav .menu {
-    width: 80%;
-    display: none;
-  }
-  nav .hamburger {
-    width: 20%;
-    display: block;
   }
   .wrapper.header-home {
     width: 95%;
