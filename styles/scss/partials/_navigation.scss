@@ -9,32 +9,30 @@ nav {
     justify-content: space-between;
         ul {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             padding: 1rem;
         }
 }
 
 .menu {
-    margin-left: 34%;
+    width: 100%;
 }
 
 .hamburger {
-    // display: none;
-    margin-right: 2%;
-    margin-top: 1%;
+    margin: 1% 2%;
     font-size: 4rem;
 }
 
 nav li {
     display: inline-block;
-    padding: 0 5%;
+    padding: 0 1%;
 }
 
 nav ul li:nth-child(3) {
     font-family: $logo;
     font-weight: bold;
-    padding: 0 4%;
+    padding: 0 2%;
 }
 
 nav p,

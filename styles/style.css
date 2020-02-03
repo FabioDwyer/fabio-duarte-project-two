@@ -453,8 +453,9 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -462,24 +463,23 @@ nav ul {
 }
 
 .menu {
-  margin-left: 34%;
+  width: 100%;
 }
 
 .hamburger {
-  margin-right: 2%;
-  margin-top: 1%;
+  margin: 1% 2%;
   font-size: 4rem;
 }
 
 nav li {
   display: inline-block;
-  padding: 0 5%;
+  padding: 0 1%;
 }
 
 nav ul li:nth-child(3) {
   font-family: "Lora", serif;
   font-weight: bold;
-  padding: 0 4%;
+  padding: 0 2%;
 }
 
 nav p,
@@ -576,7 +576,7 @@ header.header-blog {
   position: absolute;
   top: 85%;
   left: 10%;
-  font-size: 6.4rem;
+  font-size: 4.85vw;
 }
 
 footer {
@@ -602,6 +602,9 @@ form.contact {
   width: calc(70% - 40px);
   margin-top: 10%;
   margin-left: 40px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 main.blog p {
@@ -1000,16 +1003,16 @@ form button {
   .header-home .logo-container h1 {
     top: 18%;
   }
-  .header-blog h1,
-  .header-contact h1 {
+  header.header-contact,
+  header.header-blog {
+    height: 45vh;
+  }
+  header.header-contact h1,
+  header.header-blog h1 {
     top: 70%;
     left: 5%;
     line-height: 2.3;
-  }
-  header.header-contact,
-  header.header-blog {
-    background-position-x: 40%;
-    height: 45vh;
+    font-size: 6.75vw;
   }
   .row-one,
   .row-two {
@@ -1073,6 +1076,12 @@ form button {
     width: calc((100% - 40px) /3);
     padding-bottom: 2%;
   }
+  main.blog,
+  form.contact {
+    width: calc(70% - 20px);
+    margin-top: 10%;
+    margin-left: 20px;
+  }
 }
 
 /* Landscape phone to portrait tablet */
@@ -1087,7 +1096,7 @@ form button {
     font-size: 4rem;
   }
   .wrapper.header-home {
-    width: 95%;
+    width: 70%;
   }
   .header-home {
     display: block;
@@ -1100,13 +1109,13 @@ form button {
     position: relative;
     width: 16vw;
     top: 20%;
-    left: 12%;
+    left: 0;
   }
   .header-home .logo-container h1 {
     font-size: 15vw;
     position: relative;
     top: 15%;
-    left: 17%;
+    left: 5%;
   }
   .header-home .logo-container img {
     top: 20%;
@@ -1114,11 +1123,68 @@ form button {
   .header-home .img-container {
     width: 100%;
   }
+  header.header-contact,
+  header.header-blog {
+    height: 35vh;
+  }
+  header.header-contact h1,
+  header.header-blog h1 {
+    top: 77%;
+    line-height: 1.7;
+  }
   main.home {
     margin: 10% 0;
   }
   main.home p {
     margin: 4% 0;
+  }
+  .wrapper.blog,
+  .wrapper.contact {
+    display: block;
+    width: 100%;
+  }
+  main.blog,
+  form.contact {
+    width: 90%;
+    margin: 5% auto;
+  }
+  aside.blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin: 5% 0;
+  }
+  .aside-top-blog,
+  .aside-bottom-blog {
+    width: calc(50% - 20px);
+    margin: 0 5px;
+    padding: 4%;
+  }
+  form.contact,
+  aside.contact {
+    width: 90%;
+    margin: 10% auto;
+  }
+  aside.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  aside .social-media {
+    width: 40%;
+    padding-top: 10%;
+  }
+  aside .social-media ul.social-media li {
+    display: block;
+  }
+  aside .address {
+    width: 60%;
   }
   .row-one .text-container,
   .row-two .text-container {
@@ -1138,6 +1204,47 @@ form button {
 }
 
 @media (max-width: 692px) {
+  .wrapper.header-home {
+    width: 50%;
+  }
+  .header-home .logo-container {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .header-home .logo-container img {
+    position: relative;
+    width: 16vw;
+    top: 20%;
+    left: -15%;
+  }
+  .header-home .logo-container h1 {
+    font-size: 14vw;
+    position: relative;
+    top: 15%;
+    left: -8%;
+  }
+  .header-home .logo-container img {
+    top: 20%;
+  }
+  .header-home .img-container img {
+    -webkit-box-shadow: 8px 8px #FFF;
+            box-shadow: 8px 8px #FFF;
+  }
+  header.header-contact,
+  header.header-blog {
+    height: 45vh;
+  }
+  header.header-contact h1,
+  header.header-blog h1 {
+    top: 83.5%;
+    font-size: 7vw;
+  }
+  header.header-blog {
+    background-position-x: 90%;
+  }
+  header.header-contact {
+    background-position-x: 50%;
+  }
   .feature {
     margin-bottom: 5rem;
   }
@@ -1157,15 +1264,15 @@ form button {
     display: inline-block;
   }
   .journey .img-container {
-    width: 100%;
+    width: 80%;
     margin: 0 0 5% 8.5%;
   }
   .journey .img-container img {
     width: 40%;
   }
   .journey .text-content {
-    width: 100%;
-    margin-left: 20px;
+    width: 90%;
+    margin-left: 10px;
     padding: 0 5%;
   }
 }
@@ -1188,6 +1295,19 @@ form button {
   .header-home .logo-container img {
     width: 20vw;
   }
+  .header-home .img-container img {
+    width: 100%;
+    right: 5%;
+  }
+  header.header-blog {
+    background-position-x: 70%;
+  }
+  header.header-contact h1,
+  header.header-blog h1 {
+    font-size: 5rem;
+    top: 80%;
+    line-height: 1;
+  }
   .row-one .image-box img,
   .row-two .image-box img {
     width: 85%;
@@ -1205,5 +1325,43 @@ form button {
   }
   img.hidden-for-mobile {
     display: none;
+  }
+  aside.blog {
+    display: block;
+  }
+  .aside-top-blog,
+  .aside-bottom-blog {
+    width: 100%;
+    margin: 5% 0;
+  }
+  main.blog,
+  form.contact,
+  aside.blog,
+  aside.contact {
+    width: 90%;
+    margin: 5% auto;
+  }
+  aside.contact {
+    display: block;
+  }
+  aside .social-media,
+  aside .address {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+  }
+  aside .social-media li,
+  aside .address li {
+    padding: 0 5%;
+  }
+  .wrapper.contact {
+    margin-top: 20%;
+  }
+  fieldset {
+    display: block;
+  }
+  fieldset input {
+    width: 100%;
   }
 }
